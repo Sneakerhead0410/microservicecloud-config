@@ -4,7 +4,7 @@ spring:
     - dev
 ---
 server: 
-  port: 8203 
+  port: 8201 
 spring:
   profiles: dev
   application: 
@@ -12,7 +12,9 @@ spring:
 eureka: 
   client: 
     service-url: 
-      defaultZone: http://eureka-dev.com:7001/eureka/   
+      defaultZone: http://eureka-dev.com:7001/eureka/
+config:
+  info: "master branch,microservicecloud-config/microservicecloud-config.yml version = 3"
 ---
 server: 
   port: 8202 
@@ -24,5 +26,6 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka-test.com:7001/eureka/
- 
+ config:
+  info: "master branch,microservicecloud-config/microservicecloud-config.yml version = 3"
 
