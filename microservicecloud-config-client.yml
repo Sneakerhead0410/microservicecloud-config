@@ -13,8 +13,10 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka-dev.com:7001/eureka/
+      
 config:
-  info: "master branch,microservicecloud-config/microservicecloud-config.yml version = 3"
+  info: "master branch,sneakerhead0410/microservicecloud-config.yml version = 3"
+  
 ---
 server: 
   port: 8202 
@@ -26,6 +28,6 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka-test.com:7001/eureka/
- config:
-  info: "master branch,microservicecloud-config/microservicecloud-config.yml version = 3"
+config:
+  info: "master branch,sneakerhead0410/microservicecloud-config.yml version = 3"
 
